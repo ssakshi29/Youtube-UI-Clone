@@ -1,0 +1,169 @@
+*{
+    
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    overflow:hidden;
+}
+
+.header{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    padding:10px;
+    top:0;
+    position:sticky;
+    background-color:white;
+    z-index:200;
+}
+
+.header-left{
+    display:flex;
+    align-items: center;  
+}
+
+.header-search{
+    display:flex;
+    align-items: center;
+    width:40%;
+}
+
+.header-right{
+    display:flex;
+    align-items:center;
+}
+
+
+.header i{
+    padding:0px 5px;
+    cursor: pointer;
+}
+
+.header-left img{
+    height:20px;
+    margin-left:10px;
+    width:100px;
+}
+
+.search {
+    width:100%;
+    display:flex;
+    /* flex:1; */
+    border:1px solid lightgray;
+}
+
+.search>input{
+    flex:1;
+
+}
+
+
+/* Mainbody css */
+
+.mainbody{
+    display:flex;
+   overflow:hidden;
+}
+
+.sidebar{
+    flex:0.16;
+    border-right: 1px solid lightgray;
+    padding-top:5px;
+    padding-right:10px;
+    overflow-y:scroll;
+    overflow-x: hidden;
+    position:sticky;
+    height:100vh;
+   
+}
+.sidebar div{
+  padding:5px 5px;
+  display:flex;
+  align-items: center;
+  color:rgb(19, 18, 18);
+ 
+}
+
+.row h5{
+    font-size:15px;
+    font-family: Roboto, Arial, sans-serif;
+    margin-left:10px;
+    margin-right:15px;
+    text-align:start;
+}
+.sidebar>.row:hover{
+background-color: lightgray;
+}
+
+.videocard{
+    flex:0.84;
+    overflow: scroll;
+    height:100vh;
+}
+
+.stick > hr{
+    height:1px;
+    border:0;
+}
+
+.stick{
+    position:sticky; 
+    z-index:100;
+    top:0;
+    background-color: white;
+}
+.btnvc{
+        background-color:rgba(211, 211, 211, 0.685);
+        margin-left:15px;
+        margin-right:4px;
+        margin-top:0;
+        margin-bottom:10px;
+        -webkit-border-radius: 84px 84px 84px 84px;
+        -moz-border-radius: 84px 84px 84px 84px;
+        border-radius: 84px 84px 84px 84px;
+        border : solid 1px #777777;
+        padding:5px 10px 5px 10px;
+        font-size:15px;
+}
+
+.row1{
+    display:flex;
+    /* justify-content: space-around; */
+    flex-wrap: wrap;
+    margin-left:2%;
+   
+}
+.card {
+    flex-shrink: 0;
+    /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3); */
+    max-width:260px;
+    margin-left:10px;
+    margin-right:0;
+    margin-top:5px;
+    height:260px;
+    text-align: center;
+   
+   }
+
+  .text {
+    padding: 2px 2px;
+  }
+
+  
+
+  ::-webkit-scrollbar {
+    width: 10px;
+    height:5px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    border-radius: 10px;
+  }
+   
+  ::-webkit-scrollbar-thumb {
+    background: gray; 
+    border-radius: 10px;
+  }
+  
+  
+ 
